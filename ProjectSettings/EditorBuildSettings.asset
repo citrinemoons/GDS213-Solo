@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Cat Wash.unity
     guid: f89e138245875414e8c6f9db371e2b6a
+  - enabled: 1
+    path: Assets/Scenes/Death.unity
+    guid: 20b93f56167945945aa038647ab231b1
   m_configObjects: {}

@@ -55,5 +55,11 @@ public class ButtonController : MonoBehaviour
     {
         gameObject.SetActive(false);
     }
+
+
+    public void DeathScreen()
+    {
+        SceneManager.LoadScene("Death"); 
+    }
 }
 
