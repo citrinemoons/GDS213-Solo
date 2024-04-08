@@ -8,15 +8,14 @@ using UnityEngine.UI;
 
 public class ButtonController : MonoBehaviour
 {
-    public TextMeshProUGUI textMeshPro;
-    public GameObject Checklist; 
+
 
     void Start()
     {
-        textMeshPro = GetComponent<TextMeshProUGUI>();
 
 
     }
+    
 
     void Update()
     {
@@ -30,7 +29,7 @@ public class ButtonController : MonoBehaviour
 
     public void Go()
     {   
-        SceneManager.LoadScene("Cat Wash");
+        SceneManager.LoadScene("Main Coon");
     }
 
     public void BackToMain()
@@ -61,5 +60,32 @@ public class ButtonController : MonoBehaviour
     {
         SceneManager.LoadScene("Death"); 
     }
+
+
+   public void British()
+    {
+        SceneManager.LoadScene("British Shorthair");
+    }
+
+
+    public void Scottish()
+    {
+        SceneManager.LoadScene("Scottish Fold");
+    }
+
+
+    public void LetGo()
+    {
+        SceneManager.LoadScene("Let Go");
+    }
+
+
+    public void Credits()
+    {
+        SceneManager.LoadScene("Credits");
+    }
+
+
+
 }
 
