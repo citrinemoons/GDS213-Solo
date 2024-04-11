@@ -8,8 +8,11 @@ using UnityEngine.UI;
 
 public class ButtonController : MonoBehaviour
 {
-
-
+    [SerializeField] private GameObject checklist;
+    [SerializeField] private GameObject buttons;
+    [SerializeField] private GameObject checklistButton;
+    [SerializeField] private GameObject finishedButton;
+    [SerializeField] private GameObject finishedMenu;
     void Start()
     {
 
@@ -47,7 +50,25 @@ public class ButtonController : MonoBehaviour
 
     public void ChecklistButton()
     {
-        gameObject.SetActive(true);
+        if(checklist.activeInHierarchy == true)
+        {
+            checklist.SetActive(false);
+        }
+        else
+        {
+            checklist.SetActive(true);
+        }
+    }
+
+
+    public void Finished()
+    {
+        finishedMenu.SetActive(true);
+        buttons.SetActive(false);
+        checklistButton.SetActive(false);
+        finishedButton.SetActive(false);
+        
+        
     }
 
     public void BackToWash()

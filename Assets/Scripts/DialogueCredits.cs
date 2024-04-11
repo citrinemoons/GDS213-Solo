@@ -10,6 +10,7 @@ public class DialogueCredits: MonoBehaviour
     public TextMeshProUGUI textDialogueEnd;
     public string[] finalLines;
     public float speeds;
+    public AudioSource bossSad;
 
 
     private int finalIndex;
@@ -25,6 +26,7 @@ public class DialogueCredits: MonoBehaviour
     {
         if (Input.GetKeyDown("space"))  
         {
+            bossSad.Play();
             if (textDialogueEnd.text == finalLines[finalIndex])
             {
 

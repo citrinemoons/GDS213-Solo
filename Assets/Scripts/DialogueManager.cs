@@ -11,7 +11,9 @@ public class DialogueManager : MonoBehaviour
     public string[] lines;
     public float speed;
     public GameObject textBox;
-    
+    public AudioSource boss; 
+
+
 
     private int index;
 
@@ -26,9 +28,13 @@ public class DialogueManager : MonoBehaviour
     {
         if (Input.GetKeyDown("space"))
         {
+            boss.Play(); 
+
             if (textDialogue.text == lines[index])
             {
+              
                 NextLine();
+              
 
             }
             else
@@ -56,7 +62,7 @@ public class DialogueManager : MonoBehaviour
 
         foreach (char c in lines[index].ToCharArray())
         {
-
+            
             textDialogue.text += c;
             yield return new WaitForSeconds(speed);
         }
@@ -69,6 +75,8 @@ public class DialogueManager : MonoBehaviour
             index++;
             textDialogue.text = string.Empty;
             StartCoroutine(Sentence());
+          
+           
 
         }
         else
