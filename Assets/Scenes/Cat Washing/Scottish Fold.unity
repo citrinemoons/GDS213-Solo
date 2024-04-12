@@ -1235,6 +1235,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1268596562}
+  - component: {fileID: 1268596563}
   m_Layer: 0
   m_Name: Cleaning Kit
   m_TagString: Untagged
@@ -1260,6 +1261,27 @@ Transform:
   - {fileID: 3883668983805032753}
   m_Father: {fileID: 513198601827135714}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1268596563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1268596561}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 918340a9374daca4eb89c2b29f037e26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bubbles: {fileID: 1988041137636180197}
+  water: {fileID: 4197135252462131903}
+  dryer: {fileID: 5978781072634323676}
+  finishButton: {fileID: 1354440630}
+  isBubbles: 0
+  isWater: 0
+  isDryer: 0
+  canFinish: 0
+  isFinish: 0
 --- !u!1 &1354440630
 GameObject:
   m_ObjectHideFlags: 0
@@ -1278,7 +1300,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1354440631
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3340,21 +3362,6 @@ RectTransform:
   m_AnchoredPosition: {x: 10, y: -10}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1227231127842374087
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1988041137636180197}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 918340a9374daca4eb89c2b29f037e26, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bubbles: {fileID: 1988041137636180197}
-  water: {fileID: 4197135252462131903}
-  dryer: {fileID: 5978781072634323676}
 --- !u!114 &1273991908234882726
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3814,7 +3821,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5035731654157807698}
-  - component: {fileID: 1227231127842374087}
   m_Layer: 0
   m_Name: Bubbles
   m_TagString: Untagged
@@ -4942,7 +4948,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1227231127842374087}
+      - m_Target: {fileID: 1268596563}
         m_TargetAssemblyTypeName: ButtonPlay, Assembly-CSharp
         m_MethodName: DryOff
         m_Mode: 1
@@ -5393,7 +5399,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1227231127842374087}
+      - m_Target: {fileID: 1268596563}
         m_TargetAssemblyTypeName: ButtonPlay, Assembly-CSharp
         m_MethodName: HoseDown
         m_Mode: 1
@@ -6292,7 +6298,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1227231127842374087}
+      - m_Target: {fileID: 1268596563}
         m_TargetAssemblyTypeName: ButtonPlay, Assembly-CSharp
         m_MethodName: BubbleBath
         m_Mode: 1
