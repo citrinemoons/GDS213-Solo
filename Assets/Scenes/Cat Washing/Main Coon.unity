@@ -177,6 +177,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 203735357}
+  - component: {fileID: 203735358}
   m_Layer: 0
   m_Name: Cleaning Kit
   m_TagString: Untagged
@@ -202,6 +203,27 @@ Transform:
   - {fileID: 4943955215396560872}
   m_Father: {fileID: 8531746405321168443}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &203735358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 203735356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 918340a9374daca4eb89c2b29f037e26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bubbles: {fileID: 7705401326341678652}
+  water: {fileID: 5424265834464164966}
+  dryer: {fileID: 2558327139949790213}
+  finishButton: {fileID: 7847323569217009962}
+  isBubbles: 0
+  isWater: 0
+  isDryer: 0
+  canFinish: 0
+  isFinish: 0
 --- !u!4 &627440081 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5760400188726088363, guid: ce59bf858d2a17143b58e3f4be296549, type: 3}
@@ -5008,7 +5030,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6949588015037064990}
+      - m_Target: {fileID: 203735358}
         m_TargetAssemblyTypeName: ButtonPlay, Assembly-CSharp
         m_MethodName: BubbleBath
         m_Mode: 1
@@ -6378,7 +6400,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6949588015037064990}
+      - m_Target: {fileID: 203735358}
         m_TargetAssemblyTypeName: ButtonPlay, Assembly-CSharp
         m_MethodName: HoseDown
         m_Mode: 1
@@ -8764,7 +8786,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6949588015037064990}
+      - m_Target: {fileID: 203735358}
         m_TargetAssemblyTypeName: ButtonPlay, Assembly-CSharp
         m_MethodName: DryOff
         m_Mode: 1
@@ -9041,21 +9063,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &6949588015037064990
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7705401326341678652}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 918340a9374daca4eb89c2b29f037e26, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bubbles: {fileID: 7705401326341678652}
-  water: {fileID: 5424265834464164966}
-  dryer: {fileID: 2558327139949790213}
 --- !u!224 &6962412183311959018
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9789,7 +9796,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3790735719757272715}
-  - component: {fileID: 6949588015037064990}
   m_Layer: 0
   m_Name: Bubbles
   m_TagString: Untagged
@@ -10011,7 +10017,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &7847994814078553560
 MonoBehaviour:
   m_ObjectHideFlags: 0
