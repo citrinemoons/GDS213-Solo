@@ -14,6 +14,7 @@ public class ButtonController : MonoBehaviour
     [SerializeField] private GameObject finishedButton;
     [SerializeField] private GameObject finishedMenu;
     [SerializeField] private GameObject cat;
+    [SerializeField] private GameObject cleaningKit;
     void Start()
     {
 
@@ -69,6 +70,7 @@ public class ButtonController : MonoBehaviour
         checklistButton.SetActive(false);
         finishedButton.SetActive(false);
         cat.SetActive(false);
+        cleaningKit.SetActive(false);
         
         
     }
