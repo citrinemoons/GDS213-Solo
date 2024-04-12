@@ -13,6 +13,7 @@ public class ButtonController : MonoBehaviour
     [SerializeField] private GameObject checklistButton;
     [SerializeField] private GameObject finishedButton;
     [SerializeField] private GameObject finishedMenu;
+    [SerializeField] private GameObject cat;
     void Start()
     {
 
@@ -67,6 +68,7 @@ public class ButtonController : MonoBehaviour
         buttons.SetActive(false);
         checklistButton.SetActive(false);
         finishedButton.SetActive(false);
+        cat.SetActive(false);
         
         
     }
